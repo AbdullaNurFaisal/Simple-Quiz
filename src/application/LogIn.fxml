@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="640" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+
+   <children>
+      <Text layoutX="142.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="238.0" layoutY="184.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter username" />
+      <Text layoutX="142.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="password" layoutX="238.0" layoutY="242.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter password" />
+      <Button layoutX="275.0" layoutY="300.0" mnemonicParsing="false" onAction="#onLogin" text="Sign In" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="234.0" layoutY="432.0" mnemonicParsing="false" onAction="#onCreateNewAccount" prefHeight="28.0" prefWidth="149.0" text="Create new account" />
+   </children>
+</AnchorPane>
